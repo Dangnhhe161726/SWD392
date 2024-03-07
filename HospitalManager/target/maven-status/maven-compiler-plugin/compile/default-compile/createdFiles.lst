@@ -1,1 +1,10 @@
-.netbeans_automatic_build
+com\swd\hospitalmanager\controllers\dungdan.class
+model\Patient.class
+com\swd\hospitalmanager\controllers\LoginController.class
+dao\UserDAO.class
+model\Employee.class
+com\swd\hospitalmanager\controllers\test.class
+model\Doctor.class
+dao\EmployeeDAO.class
+dao\DoctorDAO.class
+model\User.class
