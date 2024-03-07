@@ -40,23 +40,24 @@ public class LoginController extends HttpServlet {
 
             UserDAO dao = new UserDAO();
             User user = dao.getUserByEmailAndPass(email, password);
-//        User user = dao.getUserByEmailAndPass(email, password);
-
             //get user by email and pass if user not exist, display message
             //if user exist direct user to page based on role
             if (user == null) {
                 request.setAttribute("errorMessage", "Account Information invalid, try again");
                 request.getRequestDispatcher("/Login.jsp").forward(request, response);
             } else {
-                //testing
                 switch (user.getRole()) {
                     case 1:
                         session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/Home");
+                        response.sendRedirect(request.getContextPath() + "/DoctorHome");
                         break;
                     case 2:
                         session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/AdminHome");
+                        response.sendRedirect(request.getContextPath() + "/EmployeeHome");
+                        break;
+                    case 3:
+                        session.setAttribute("user", user);
+                        response.sendRedirect(request.getContextPath() + "/PatientHome");
                         break;
                     default:
                         break;

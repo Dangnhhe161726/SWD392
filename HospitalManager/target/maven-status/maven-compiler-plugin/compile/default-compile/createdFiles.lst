@@ -1,7 +1,6 @@
 com\swd\hospitalmanager\controllers\dungdan.class
 model\Patient.class
 com\swd\hospitalmanager\controllers\LoginController.class
-dao\Patient.class
 dao\UserDAO.class
 model\Employee.class
 com\swd\hospitalmanager\controllers\test.class

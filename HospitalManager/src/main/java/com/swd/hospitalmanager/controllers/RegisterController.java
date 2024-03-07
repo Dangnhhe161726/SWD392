@@ -35,7 +35,7 @@ public class RegisterController extends HttpServlet {
         try ( PrintWriter out = response.getWriter()) {
             String submit = request.getParameter("submit");
             if (submit == null) {
-                request.getRequestDispatcher("/Client/register.jsp").forward(request, response);
+                request.getRequestDispatcher("/Register.jsp").forward(request, response);
             } else {
                 String email = request.getParameter("email");
                 String firstname = request.getParameter("firstname");

@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <title>Login</title>
+        <title>Login</title>
     </head>
     <body>
     <html>
@@ -31,6 +31,7 @@
                 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
                 rel="stylesheet"
                 />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <style>
                 .divider:after,
                 .divider:before {
@@ -92,7 +93,7 @@
                                         <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
                                         <label class="form-check-label" for="form1Example3"> Remember me </label>
                                     </div>
-                                    <a href="Forget.jsp" style="color: #333333;text-decoration: underline;font-weight: bold">Forgot password?</a>
+                                    <a href="#" style="color: #333333;text-decoration: underline;font-weight: bold">Forgot password?</a>
                                 </div>
 
                                 <!-- Submit button -->
@@ -102,9 +103,17 @@
                                     <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
                                 </div>
                                 <center>
-                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account?   
-                                        <a href="Register.jsp" style="background-color: red" class="btn btn-primary">Register</a>
-                                    </p>
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account?</p>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Register as a
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="DoctorRegister">Doctor</a>
+                                            <a class="dropdown-item" href="EmployeeRegister">Employee</a>
+                                            <a class="dropdown-item" href="PatientRegister">Patient</a>
+                                        </div>
+                                    </div>
                                 </center>
                             </form>
                         </div>
@@ -112,34 +121,37 @@
                 </div>
             </section>
         </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script>
-            function validateInput() {
-                var email = document.forms["FORM"]["email"].value;
-                var password = document.forms["FORM"]["password"].value;
-                if (email === null || email === "") {
-                    alert("Email must be filled out");
-                    return false;
-                }
-                if (password === null || password === "") {
-                    alert("Password must be filled out");
-                    return false;
-                }
-                return true;
-            }
+                                function validateInput() {
+                                    var email = document.forms["FORM"]["email"].value;
+                                    var password = document.forms["FORM"]["password"].value;
+                                    if (email === null || email === "") {
+                                        alert("Email must be filled out");
+                                        return false;
+                                    }
+                                    if (password === null || password === "") {
+                                        alert("Password must be filled out");
+                                        return false;
+                                    }
+                                    return true;
+                                }
 
-            function validatePassword() {
-                var password = document.forms["FORM"]["password"].value;
-                var pattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_]).{8,}$/;
-                if (!pattern.test(password)) {
-                    alert("Password at least 1 UpperCase, 1 LowerCase, 1 Special Character and more 8 Letters");
-                    return false;
-                }
-                return true;
-            }
+                                function validatePassword() {
+                                    var password = document.forms["FORM"]["password"].value;
+                                    var pattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_]).{8,}$/;
+                                    if (!pattern.test(password)) {
+                                        alert("Password at least 1 UpperCase, 1 LowerCase, 1 Special Character and more 8 Letters");
+                                        return false;
+                                    }
+                                    return true;
+                                }
 
-            //min 8 letter password, with at least a symbol, upper and lower case letters and a number
-            //John Doe
-            //Dungle101201@
+                                //min 8 letter password, with at least a symbol, upper and lower case letters and a number
+                                //John Doe
+                                //Dungle101201@
 
         </script>
     </html>
