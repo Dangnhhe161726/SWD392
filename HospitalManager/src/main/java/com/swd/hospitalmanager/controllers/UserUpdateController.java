@@ -11,14 +11,12 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import model.User;
 
 /**
  *
  * @author FPT SHOP
  */
-public class LoginController extends HttpServlet {
+public class UserUpdateController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,40 +31,13 @@ public class LoginController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            //luu seesion
-            HttpSession session = request.getSession();
+            String id = request.getParameter("id");
+            String role = request.getParameter("role");
+            String status = request.getParameter("status");
+            UserDAO userDAO = new UserDAO();
+            userDAO.updateUserDetail(id, role, status);
 
-            UserDAO dao = new UserDAO();
-            User user = dao.getUserByEmailAndPass(email, password);
-            //get user by email and pass if user not exist, display message
-            //if user exist direct user to page based on role
-            if (user == null) {
-                request.setAttribute("errorMessage", "Account Information invalid, try again");
-                request.getRequestDispatcher("/Login.jsp").forward(request, response);
-            } else {
-                switch (user.getRole()) {
-                    case 1:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/DoctorHome");
-                        break;
-                    case 2:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/EmployeeHome");
-                        break;
-                    case 3:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/PatientHome");
-                        break;
-                    case 4:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/AdminHome");
-                        break;
-                    default:
-                        break;
-                }
-            }
+            response.sendRedirect("AdminHome");
         }
     }
 
@@ -82,7 +53,7 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/Login.jsp").forward(request, response);
+        processRequest(request, response);
     }
 
     /**
