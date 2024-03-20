@@ -22,7 +22,7 @@ public class DBContext {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/hospital", "root", "020061");
+                    "jdbc:mysql://localhost:3306/hospital", "root", "12345");
             System.out.println("Success");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);

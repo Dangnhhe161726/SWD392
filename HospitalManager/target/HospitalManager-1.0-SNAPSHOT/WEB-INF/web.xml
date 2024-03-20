@@ -28,7 +28,7 @@
         <servlet-name>PatientRegisterController</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.PatientRegisterController</servlet-class>
     </servlet>
-    <servlet>
+<servlet>
         <servlet-name>AdminHome</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.AdminHome</servlet-class>
     </servlet>
@@ -39,8 +39,7 @@
     <servlet>
         <servlet-name>UserDetailsController</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.UserDetailsController</servlet-class>
-    </servlet>
-<servlet>
+    </servlet><servlet>
         <servlet-name>ListPatient</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.ListPatient</servlet-class>
     </servlet>
@@ -83,7 +82,7 @@
         <servlet-name>PatientRegisterController</servlet-name>
         <url-pattern>/PatientRegister</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
+<servlet-mapping>
         <servlet-name>AdminHome</servlet-name>
         <url-pattern>/AdminHome</url-pattern>
     </servlet-mapping>
@@ -94,8 +93,7 @@
     <servlet-mapping>
         <servlet-name>UserDetailsController</servlet-name>
         <url-pattern>/UserDetails</url-pattern>
-    </servlet-mapping>
-<servlet-mapping>
+    </servlet-mapping><servlet-mapping>
         <servlet-name>ListPatient</servlet-name>
         <url-pattern>/listpatient</url-pattern>
     </servlet-mapping>

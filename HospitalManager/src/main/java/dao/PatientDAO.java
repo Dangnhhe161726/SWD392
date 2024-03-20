@@ -237,8 +237,6 @@ private void deletePatientAndUser(String patientId, String userId) throws SQLExc
 public static void main(String[] args) {
   PatientDAO p = new PatientDAO();
   
-  p.deletePatient("14");
-  
   
 //int userId = -1; // Initialize user ID with a default value
 //
@@ -252,16 +250,19 @@ public static void main(String[] args) {
 //} catch (SQLException ex) {
 //    Logger.getLogger(PatientDAO.class.getName()).log(Level.SEVERE, null, ex);
 //}
-p.deletePatient("15");
-p.EditPatient("dfsdf", "2022-04-03", "1", "fsdafds", "0987876532", "1");
+//p.deletePatient("15");
+//p.EditPatient("dfsdf", "2022-04-03", "1", "fsdafds", "0987876532", "1");
 // Continue with any additional logic here...
 
-}
-//        ArrayList<Patient> listPatient =new ArrayList<>();
-//        listPatient=p.getallPatient();
-//           System.out.println(listPatient.toString());
+
+        ArrayList<Patient> listPatient = p.getallPatient();
+           
+        for(Patient pa : listPatient) {
+            System.out.println(pa.toString());
+        }
     }
     
        
        
 
+}
