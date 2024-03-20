@@ -16,7 +16,8 @@ public class User {
     private String password;
     private boolean status;
     private int role;
-
+ 
+    public Patient patient;
     public User() {
     }
 
@@ -86,6 +87,15 @@ public class User {
         this.role = role;
     }
     
-    
-    
+     public User(int id,String email,String password, boolean status,Patient patient){
+             this.id = id;
+                 this.email = email;
+            this.password = password;
+              this.status = status;
+              this.patient=patient;
+     }
+       public User(int id){
+           
+             this.id = id;
+       } 
 }

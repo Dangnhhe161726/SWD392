@@ -1,4 +1,5 @@
 context\DBContext.class
+com\swd\hospitalmanager\controllers\ListPatient.class
 com\swd\hospitalmanager\controllers\RegisterController.class
 com\swd\hospitalmanager\controllers\dungdan.class
 com\swd\hospitalmanager\controllers\PatientRegisterController.class
