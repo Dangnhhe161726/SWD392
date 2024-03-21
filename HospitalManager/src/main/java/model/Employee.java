@@ -13,7 +13,7 @@ import java.util.Date;
 public class Employee {
     private int id;
     private String fullname;
-    private String dob;
+    private Date dob;
     private boolean gender;
     private String address;
     private String phonenumber;
@@ -22,7 +22,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String fullname, String dob, boolean gender, String address, String phonenumber, int user_id) {
+    public Employee(int id, String fullname, Date dob, boolean gender, String address, String phonenumber, int user_id) {
         this.id = id;
         this.fullname = fullname;
         this.dob = dob;
@@ -48,11 +48,11 @@ public class Employee {
         this.fullname = fullname;
     }
 
-    public String getDob() {
+    public Date getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(Date dob) {
         this.dob = dob;
     }
 
@@ -87,15 +87,5 @@ public class Employee {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
-    @Override
-public String toString() {
-    return "Employee{" +
-            "id=" + id +
-            ", fullname='" + fullname + '\'' +
-            ", dob=" + dob +
-            ", gender=" + gender +
-            ", address='" + address + '\'' +
-            ", phonenumber='" + phonenumber + '\'' +
-            ", user_id=" + user_id +
-            '}';}
+    
 }

@@ -53,11 +53,15 @@ public class LoginController extends HttpServlet {
                         break;
                     case 2:
                         session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/EmployeeHome");
+                        response.sendRedirect(request.getContextPath() + "/listpatient"); //Employee Home
                         break;
                     case 3:
                         session.setAttribute("user", user);
                         response.sendRedirect(request.getContextPath() + "/PatientHome");
+                        break;
+                    case 4:
+                        session.setAttribute("user", user);
+                        response.sendRedirect(request.getContextPath() + "/AdminHome");
                         break;
                     default:
                         break;

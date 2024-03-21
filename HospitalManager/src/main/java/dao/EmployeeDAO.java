@@ -5,21 +5,16 @@
 package dao;
 
 import context.DBContext;
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import model.Employee;
 
 /**
  *
  * @author FPT SHOP
  */
 public class EmployeeDAO extends DBContext {
-
     public int insertNewEmployee(int user_id, String email,
             String first_name, String last_name, String password, boolean status, int role,
             int employee_id, String fullname, String dob,
@@ -58,8 +53,7 @@ public class EmployeeDAO extends DBContext {
         }
         return n;
     }
-
-    public List<Employee> getAllEm() {
+public List<Employee> getAllEm() {
         List<Employee> list = new ArrayList<>();
         String query = "select * from hospital.employee";
         try {
@@ -159,7 +153,7 @@ public void insertEmployee( String fullname, String dob,
             ps.setString(7, id);
             ps.executeUpdate();
         } catch (Exception e) {
-            // Xử lý ngoại lệ
+            // X? l� ngo?i l?
             e.printStackTrace();
         }
     }
@@ -170,4 +164,5 @@ public void insertEmployee( String fullname, String dob,
 //    UPDATE `hospital`.`employee` SET `fullname` = 'qw1', `dob` = '1999-02-02 00:00:00.0000001', `gender` = '2', `address` = 'hn1', `phonenumber` = '12345678901', `user_id` = '61' WHERE (`id` = '2');
 ////INSERT INTO `hospital`.`employee` (`id`, `fullname`, `dob`, `gender`, `address`, `phonenumber`, `user_id`) VALUES ('2', 'qw', '1999-02-02', '1', 'hn', '1234567890', '6');
 //    }
+}
 }

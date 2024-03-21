@@ -28,6 +28,57 @@
         <servlet-name>PatientRegisterController</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.PatientRegisterController</servlet-class>
     </servlet>
+<servlet>
+        <servlet-name>AdminHome</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.AdminHome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserUpdateController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.UserUpdateController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDetailsController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.UserDetailsController</servlet-class>
+    </servlet><servlet>
+        <servlet-name>ListPatient</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.ListPatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailPatient</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.DetailPatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPatient</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.AddPatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeletePatient</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.DeletePatient</servlet-class>
+    </servlet>  
+<servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.LogoutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.RegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoctorRegisterController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.DoctorRegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EmployeeRegisterController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.EmployeeRegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PatientRegisterController</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.PatientRegisterController</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>LoadEm</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.LoadEm</servlet-class>
@@ -43,12 +94,63 @@
     <servlet>
         <servlet-name>AddEmployee</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.AddEmployee</servlet-class>
-    </servlet>
-    <servlet-mapping>
+    </servlet>  
+<servlet-mapping>
         <servlet-name>dungdan</servlet-name>
         <url-pattern>/dungdan</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterController</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoctorRegisterController</servlet-name>
+        <url-pattern>/DoctorRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmployeeRegisterController</servlet-name>
+        <url-pattern>/EmployeeRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientRegisterController</servlet-name>
+        <url-pattern>/PatientRegister</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+        <servlet-name>AdminHome</servlet-name>
+        <url-pattern>/AdminHome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserUpdateController</servlet-name>
+        <url-pattern>/UserUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDetailsController</servlet-name>
+        <url-pattern>/UserDetails</url-pattern>
+    </servlet-mapping><servlet-mapping>
+        <servlet-name>ListPatient</servlet-name>
+        <url-pattern>/listpatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailPatient</servlet-name>
+        <url-pattern>/detailpatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPatient</servlet-name>
+        <url-pattern>/addpatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletePatient</servlet-name>
+        <url-pattern>/deletepatient</url-pattern>
+    </servlet-mapping>   
+ <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
@@ -88,7 +190,7 @@
         <servlet-name>AddEmployee</servlet-name>
         <url-pattern>/addemployee</url-pattern>
     </servlet-mapping>
-    <session-config>
+<session-config>
         <session-timeout>
             30
         </session-timeout>

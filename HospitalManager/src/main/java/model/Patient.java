@@ -32,6 +32,12 @@ public class Patient {
         this.user_id = user_id;
     }
 
+      public Patient( String fullname, Date dob){
+          
+              this.fullname = fullname;
+        this.dob = dob;
+      }
+    
     public int getId() {
         return id;
     }
@@ -87,6 +93,33 @@ public class Patient {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
-    
-    
+
+ 
+//    @Override
+//     public String toString() {
+//        return "Patient{" +
+//                "id=" + id +
+//                ", fullname='" + fullname + '\'' +
+//                ", dob=" + dob +
+//                ", gender=" + gender +
+//                ", address='" + address + '\'' +
+//                ", phonenumber='" + phonenumber + '\'' +
+//                ", user_id=" + user_id +
+//                '}';
+//    }
+//    
+//    
+
+    @Override
+    public String toString() {
+       return "Patient{" +
+                "id=" + id +
+                ", fullname='" + fullname + '\'' +
+                ", dob=" + dob +
+                ", gender=" + gender +
+                ", address='" + address + '\'' +
+                ", phonenumber='" + phonenumber + '\'' +
+                ", user_id=" + user_id +
+                '}';
+    }
 }
