@@ -1,24 +1,24 @@
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\UserDetailsController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\AdminHome.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\model\User.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DoctorRegisterController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\AddPatient.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\dao\EmployeeDAO.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\LoginController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\dao\DoctorDAO.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\test.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DetailPatient.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\EmployeeRegisterController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\model\Employee.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\dao\UserDAO.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\LogoutController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\UserUpdateController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\RegisterController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\model\Doctor.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\dungdan.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\ListPatient.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DeletePatient.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\dao\PatientDAO.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\model\Patient.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\PatientRegisterController.java
-C:\Users\FPT SHOP\OneDrive\Máy tính\SWD392\HospitalManager\src\main\java\context\DBContext.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\dao\PatientDAO.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\test.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\model\Patient.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\UserUpdateController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\AdminHome.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\UserDetailsController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\EmployeeRegisterController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\RegisterController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\model\User.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\dungdan.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\model\Doctor.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DetailPatient.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\dao\EmployeeDAO.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DoctorRegisterController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\context\DBContext.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\PatientRegisterController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\DeletePatient.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\dao\UserDAO.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\AddPatient.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\LoginController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\LogoutController.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\model\Employee.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\dao\DoctorDAO.java
+D:\SWD392\SWD392\HospitalManager\src\main\java\com\swd\hospitalmanager\controllers\ListPatient.java
