@@ -39,9 +39,6 @@
                                        Create Patients</a>
                                 </div>
                             </div>
-
-       
-                     
                                 <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0" id="sampleTable">       
                                     <thead>
                                         <tr>
@@ -62,7 +59,7 @@
                 <!-- Format date using fmt:formatDate -->
                 <td>${patient.dob}</td>
                 <td>${patient.gender ? "Male" : "Female"}</td>
-                <td>${patient.address}</td>ss
+                <td>${patient.address}</td>
                 <td>${patient.phonenumber}</td>
                 <!-- Add other patient properties as needed -->
                 <td>

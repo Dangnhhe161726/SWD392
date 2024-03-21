@@ -72,6 +72,18 @@
         <servlet-name>AddEmployee</servlet-name>
         <servlet-class>com.swd.hospitalmanager.controllers.AddEmployee</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MedicalHistory</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.MedicalHistory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditMedicalHistory</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.EditMedicalHistory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcelMedicalHistory</servlet-name>
+        <servlet-class>com.swd.hospitalmanager.controllers.ExcelMedicalHistory</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dungdan</servlet-name>
         <url-pattern>/dungdan</url-pattern>
@@ -143,6 +155,18 @@
     <servlet-mapping>
         <servlet-name>PatientRegisterController</servlet-name>
         <url-pattern>/PatientRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MedicalHistory</servlet-name>
+        <url-pattern>/medicalhistory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditMedicalHistory</servlet-name>
+        <url-pattern>/editmedicalhistory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcelMedicalHistory</servlet-name>
+        <url-pattern>/excelmedicalhistory</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

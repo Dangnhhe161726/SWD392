@@ -9,12 +9,16 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import model.Doctor;
 
 /**
  *
  * @author FPT SHOP
  */
-public class DoctorDAO extends DBContext{
+public class DoctorDAO extends DBContext {
+
     public int insertNewDoctor(int user_id, String email,
             String first_name, String last_name, String password, boolean status, int role,
             int doctor_id, String fullname, String dob,
@@ -55,6 +59,30 @@ public class DoctorDAO extends DBContext{
         }
         return n;
     }
-    
-    
+
+    public List<Doctor> getAllDoctor() {
+        List<Doctor> doctors = new ArrayList<>();
+        String sql = "SELECT * FROM doctor;";
+        try {
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Doctor doctor = Doctor.builder()
+                        .id(rs.getInt("id"))
+                        .fullname(rs.getString("fullname"))
+//                        .dob(rs.getDate("dob"))
+//                        .gender(rs.getBoolean("gender"))
+//                        .address(rs.getString("address"))
+//                        .specialization(rs.getString("specialization"))
+//                        .qualification(rs.getString("qualification"))
+//                        .phonenumber(rs.getString("phonenumber"))
+                        .build();
+                doctors.add(doctor);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace(); 
+        }
+        return doctors;
+    }
+
 }
