@@ -18,7 +18,6 @@ com\swd\hospitalmanager\controllers\AddEmployee.class
 com\swd\hospitalmanager\controllers\test.class
 model\Doctor$DoctorBuilder.class
 model\Doctor.class
-.netbeans_automatic_build
 model\User.class
 com\swd\hospitalmanager\controllers\MedicalHistory.class
 context\DBContext.class

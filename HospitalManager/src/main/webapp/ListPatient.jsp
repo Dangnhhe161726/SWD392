@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     </head>
     <body onload="time()" class="app sidebar-mini rtl">
-         
+    <jsp:include page="/Dashboard.jsp"/> 
         <main class="app-content">
             <div class="app-title">
                 <ul class="app-breadcrumb breadcrumb side">

@@ -3,7 +3,7 @@
     Created on : Mar 19, 2024, 8:47:02 PM
     Author     : FPT SHOP
 --%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -40,18 +40,18 @@
         <hr>
         <ul class="app-menu">
             <!--Admin dashboard-->
-            <c:if test="${sessionScope.role_id == 4}">
+            <c:if test="${sessionScope.role == 4}">
                 <li><a class="app-menu__item " href="AdminHome"><i class='app-menu__icon bx bx-tachometer'></i><span
-                            class="app-menu__label">Admin Dashboard</span></a></li>
-                        </c:if>
-            <c:if test="${sessionScope.role_id == 1}">
-                <li><a class="app-menu__item " href="DoctorHome"><i class='app-menu__icon bx bx-tachometer'></i><span
-                            class="app-menu__label">Doctor Dashboard</span></a></li>
-                        </c:if> 
-            <c:if test="${sessionScope.role_id == 2}">
-                <li><a class="app-menu__item" href="EmployeeHome"><i class='app-menu__icon bx bx-task'></i>
-                        <span class="app-menu__label">Employee</span></a></li>
-                    </c:if>
+                            class="app-menu__label">User List</span></a></li>
+                <li><a class="app-menu__item" href="loadem"><i class='app-menu__icon bx bx-task'></i>
+                        <span class="app-menu__label">Employee List</span></a></li>
+            </c:if>
+            <c:if test="${sessionScope.role == 2 || sessionScope.role == 4}">
+                <li><a class="app-menu__item" href="listpatient"><i class='app-menu__icon bx bx-task'></i>
+                        <span class="app-menu__label">Patient List</span></a></li>
+                <li><a class="app-menu__item" href="medicalhistory"><i class='app-menu__icon bx bx-task'></i>
+                        <span class="app-menu__label">Medical History</span></a></li>
+            </c:if>
         </ul>
     </aside>
 </body>

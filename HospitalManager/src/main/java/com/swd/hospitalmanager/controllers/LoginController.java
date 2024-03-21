@@ -5,6 +5,7 @@
 package com.swd.hospitalmanager.controllers;
 
 import dao.UserDAO;
+import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -37,7 +38,6 @@ public class LoginController extends HttpServlet {
             String password = request.getParameter("password");
             //luu seesion
             HttpSession session = request.getSession();
-
             UserDAO dao = new UserDAO();
             User user = dao.getUserByEmailAndPass(email, password);
             //get user by email and pass if user not exist, display message
@@ -48,20 +48,22 @@ public class LoginController extends HttpServlet {
             } else {
                 switch (user.getRole()) {
                     case 1:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/DoctorHome");
+                        session.setAttribute("role", user.getRole());
+                        RequestDispatcher disp = request.getRequestDispatcher("/listpatient");
+                        disp.forward(request, response);
                         break;
                     case 2:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/listpatient"); //Employee Home
+                        session.setAttribute("role", user.getRole());
+                        response.sendRedirect(request.getContextPath() + "/loadem"); 
                         break;
                     case 3:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/PatientHome");
+                        session.setAttribute("role", user.getRole());
+                        response.sendRedirect(request.getContextPath() + "/medicalhistory");
                         break;
                     case 4:
-                        session.setAttribute("user", user);
-                        response.sendRedirect(request.getContextPath() + "/AdminHome");
+                        session.setAttribute("role", user.getRole());
+                        RequestDispatcher dip = request.getRequestDispatcher("/AdminHome");
+                        dip.forward(request, response);
                         break;
                     default:
                         break;
