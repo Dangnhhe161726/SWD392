@@ -49,12 +49,11 @@ public class LoginController extends HttpServlet {
                 switch (user.getRole()) {
                     case 1:
                         session.setAttribute("role", user.getRole());
-                        RequestDispatcher disp = request.getRequestDispatcher("/listpatient");
-                        disp.forward(request, response);
+                        response.sendRedirect(request.getContextPath() + "/listpatient"); 
                         break;
                     case 2:
                         session.setAttribute("role", user.getRole());
-                        response.sendRedirect(request.getContextPath() + "/loadem"); 
+                        response.sendRedirect(request.getContextPath() + "/listpatient"); 
                         break;
                     case 3:
                         session.setAttribute("role", user.getRole());
@@ -62,8 +61,7 @@ public class LoginController extends HttpServlet {
                         break;
                     case 4:
                         session.setAttribute("role", user.getRole());
-                        RequestDispatcher dip = request.getRequestDispatcher("/AdminHome");
-                        dip.forward(request, response);
+                        response.sendRedirect(request.getContextPath() + "/AdminHome");
                         break;
                     default:
                         break;
